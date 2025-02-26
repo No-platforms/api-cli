@@ -10,6 +10,9 @@ services:
       - NODE_ENV=production
       - PORT=3000
       - HOST=0.0.0.0
+      - CLI_COMMAND=docker compose up -d
+      # CLI Command Configuration
+      - CLI_WORKING_DIR=~
     volumes:
       - ./logs:/usr/src/app/logs
     restart: unless-stopped

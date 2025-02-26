@@ -1,0 +1,76 @@
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:18:17.830Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:19:55.835Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:20:11.327Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:23:50.980Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:17.766Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:18.750Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:19.348Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:19.764Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:20.456Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:21.062Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:30.411Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T11:24:21.146Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:27:20.804Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:34:35.120Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:37:42.793Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:38:51.717Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:44:42.141Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:45:21.470Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:45:21.858Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:47:28.927Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:49:38.492Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:08.832Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:50.528Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:59.057Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:58:59.863Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:59:01.845Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:59:04.178Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T13:07:55.479Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T13:17:35.111Z"}
+{"level":"error","message":"Error executing command: CLI command not configured","timestamp":"2025-02-26T13:20:35.657Z"}
+{"level":"error","message":"Command error:  Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:20:54.029Z"}
+{"level":"error","message":"Command error:  Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_cache  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:20:54.031Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:20:57.092Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:20:57.601Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:20:57.602Z"}
+{"level":"error","message":"response:  Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:32:45.577Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:32:45.579Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:32:48.638Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:32:49.148Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:36:06.063Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:36:06.064Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:09.126Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:09.129Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:09.638Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:09.639Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n Container yiiman_redis  Running\n","timestamp":"2025-02-26T13:36:54.233Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:36:54.235Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:57.288Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:57.289Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:57.798Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n Container yiiman_minio  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:37:22.398Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:37:22.401Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:37:25.456Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:25.965Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:25.967Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_redis  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:37:41.005Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:37:41.007Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:37:44.066Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:44.579Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:44.580Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n","timestamp":"2025-02-26T13:39:08.581Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:39:08.583Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:39:11.641Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:39:12.149Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n Container yiiman_redis  Running\n Container yiiman_minio  Running\n","timestamp":"2025-02-26T13:39:27.324Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:39:27.330Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:39:30.382Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:39:30.897Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:40:05.007Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:40:08.063Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:40:08.573Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:40:08.575Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n","timestamp":"2025-02-26T13:43:00.077Z"}
+{"level":"error","message":"response:  Container yiiman_redis  Running\n Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_mariadb_read_cache  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:43:00.079Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:43:03.148Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:43:03.657Z"}

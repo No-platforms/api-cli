@@ -1,0 +1,198 @@
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T21:25:04.967Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T21:27:02.640Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T21:28:25.337Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T21:33:46.797Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T21:42:59.452Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:18:17.829Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:18:17.830Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T22:19:51.394Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:19:55.835Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:19:55.835Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:20:11.327Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:20:11.327Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T22:23:43.506Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:23:50.979Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:23:50.980Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:17.765Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:17.766Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:18.750Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:18.750Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:19.348Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:19.348Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:19.764Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:19.764Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:20.455Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:20.456Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:21.062Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:21.062Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-25T22:24:27.585Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-25T22:24:30.411Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-25T22:24:30.411Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T02:53:01.777Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T11:23:57.656Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T11:24:21.145Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T11:24:21.146Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:27:14.666Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:27:20.804Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:27:20.804Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:34:27.515Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:34:31.876Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:34:35.119Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:34:35.120Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:37:36.775Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:37:42.793Z"}
+{"level":"error","message":"Error executing command: Cannot access 'process' before initialization","timestamp":"2025-02-26T12:37:42.793Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:38:43.224Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:38:48.817Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:38:51.714Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:38:51.717Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:38:51.719Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:40:30.269Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:40:42.244Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:44:39.456Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:44:42.138Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:44:42.141Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:44:42.142Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:45:17.688Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:45:21.469Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:45:21.470Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:45:21.471Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:45:21.856Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:45:21.858Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:45:21.859Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:47:28.925Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:47:28.927Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:47:28.928Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:49:34.750Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:49:38.490Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:49:38.492Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:49:38.493Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:50:08.830Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:08.832Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:50:08.833Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T12:50:35.950Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:50:50.526Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:50.528Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:50:50.530Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:50:59.055Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:50:59.057Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:50:59.058Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:58:59.862Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:58:59.863Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:58:59.864Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:59:01.840Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:59:01.845Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:59:01.846Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T12:59:04.174Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T12:59:04.178Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T12:59:04.178Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:07:44.479Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:07:55.473Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T13:07:55.479Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T13:07:55.480Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:17:35.106Z"}
+{"level":"error","message":"Process error: spawn /bin/sh ENOENT","timestamp":"2025-02-26T13:17:35.111Z"}
+{"level":"info","message":"Command completed with code -2","timestamp":"2025-02-26T13:17:35.112Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:20:25.435Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:20:35.657Z"}
+{"level":"error","message":"Error executing command: CLI command not configured","timestamp":"2025-02-26T13:20:35.657Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:20:47.777Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:20:50.760Z"}
+{"level":"error","message":"Command error:  Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:20:54.029Z"}
+{"level":"error","message":"Command error:  Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_cache  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:20:54.031Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:20:57.092Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:20:57.601Z"}
+{"level":"error","message":"Command error:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:20:57.602Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:20:57.607Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:22:16.130Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:22:38.655Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:23:07.983Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:23:15.978Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:23:32.566Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:23:37.304Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:26:04.781Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:26:09.664Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:27:58.801Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:28:11.786Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:28:22.487Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:28:24.988Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:28:33.917Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:28:39.700Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:28:58.056Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:29:02.021Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:29:20.647Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:29:25.038Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:29:52.547Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:30:10.540Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:30:30.228Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:31:00.139Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:31:01.673Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:31:19.872Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:32:37.566Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:32:42.319Z"}
+{"level":"error","message":"response:  Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:32:45.577Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:32:45.579Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:32:48.638Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:32:49.148Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:32:49.155Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:36:02.781Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_redis  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:36:06.063Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:36:06.064Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:09.126Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:09.129Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:09.638Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:09.639Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:36:09.646Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:36:48.687Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:36:50.963Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n Container yiiman_redis  Running\n","timestamp":"2025-02-26T13:36:54.233Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:36:54.235Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:57.288Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:36:57.289Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:36:57.798Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:36:57.805Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:37:12.735Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:37:19.247Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n Container yiiman_minio  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:37:22.398Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:37:22.401Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:37:25.456Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:25.965Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:25.967Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:37:25.971Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:37:37.855Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_redis  Running\n Container yiiman_postgres  Running\n","timestamp":"2025-02-26T13:37:41.005Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:37:41.007Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:37:44.066Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:44.579Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:37:44.580Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:37:44.586Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:39:00.354Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:39:05.438Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n","timestamp":"2025-02-26T13:39:08.581Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:39:08.583Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:39:11.641Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:39:12.149Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:39:12.160Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:39:24.176Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Running\n Container yiiman_postgres  Running\n Container yiiman_redis  Running\n Container yiiman_minio  Running\n","timestamp":"2025-02-26T13:39:27.324Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_read_nocache  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:39:27.330Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:39:30.382Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:39:30.897Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:39:30.902Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:39:56.669Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:40:01.858Z"}
+{"level":"error","message":"response:  Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_redis  Running\n Container yiiman_mariadb_read_nocache  Running\n Container yiiman_minio  Running\n Container yiiman_mariadb_read_cache  Running\n","timestamp":"2025-02-26T13:40:05.007Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:40:08.063Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:40:08.573Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:40:08.575Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:40:08.580Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:42:34.262Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:42:49.679Z"}
+{"level":"info","message":"Received trigger request","timestamp":"2025-02-26T13:42:56.824Z"}
+{"level":"error","message":"response:  Container yiiman_minio  Running\n","timestamp":"2025-02-26T13:43:00.077Z"}
+{"level":"error","message":"response:  Container yiiman_redis  Running\n Container yiiman_postgres  Running\n Container yiiman_mariadb_master  Running\n Container yiiman_mariadb_read_cache  Running\n Container yiiman_mariadb_read_nocache  Running\n","timestamp":"2025-02-26T13:43:00.079Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Waiting\n Container yiiman_mariadb_master  Waiting\n","timestamp":"2025-02-26T13:43:03.148Z"}
+{"level":"error","message":"response:  Container yiiman_mariadb_master  Healthy\n Container yiiman_mariadb_master  Healthy\n","timestamp":"2025-02-26T13:43:03.657Z"}
+{"level":"info","message":"Command completed with code 0","timestamp":"2025-02-26T13:43:03.664Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T13:44:03.228Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-02-26T14:19:52.843Z"}

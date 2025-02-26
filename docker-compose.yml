@@ -5,8 +5,8 @@ services:
     image: yiiman/api-cli
     build: .
     ports:
-      - "80:80"      # Nginx
-      - "3000:3000"  # Node.js app
+      #- "127.0.0.1:80:80"      # Nginx
+      - "127.0.0.1:3400:3000"  # Node.js app
     environment:
       - NODE_ENV=production
       - PORT

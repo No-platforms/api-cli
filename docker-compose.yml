@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   app:
+    image: yiiman/api-cli
     build: .
     ports:
       - "80:80"      # Nginx

@@ -8,11 +8,11 @@ services:
       - "3000:3000"  # Node.js app
     environment:
       - NODE_ENV=production
-      - PORT=3000
-      - HOST=0.0.0.0
-      - CLI_COMMAND=docker compose up -d
-      # CLI Command Configuration
-      - CLI_WORKING_DIR=~
+      - PORT
+      - HOST
+      - CLI_COMMAND
+      - CLI_WORKING_DIR
+      - API_KEY
     volumes:
       - ./logs:/usr/src/app/logs
     restart: unless-stopped

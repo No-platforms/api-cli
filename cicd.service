@@ -1,0 +1,18 @@
+[Unit]
+Description=CICD CLI Controller Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/api-cli
+ExecStart=/root/.nvm/versions/node/v19.9.0/bin/node src/server.js
+Restart=on-failure
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cicd-cli-controller
+Environment=NODE_ENV=production
+EnvironmentFile=-/root/cli-api/.env
+[Install]
+WantedBy=multi-user.target

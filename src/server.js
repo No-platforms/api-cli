@@ -61,9 +61,9 @@ const executeCLICommand = (res) => {
 
   // Split command into program and arguments
   const [cmd, ...args] = command.split(' ');
-  
+
   // Spawn the process
-  const processWithoutNullStreams = spawn(cmd, args, {
+  const prs = spawn(cmd, args, {
     cwd: workingDir,
     shell: true
   });
@@ -75,33 +75,31 @@ const executeCLICommand = (res) => {
     'Connection': 'keep-alive'
   });
 
-  // Stream stdout
-  processWithoutNullStreams.stdout.on('data', (data) => {
-    const output = data.toString();
-    logger.info(`Command output: ${output}`);
-    res.write(`data: ${output}\n\n`);
-  });
+  // Function to handle output
+  const handleOutput = (data, type) => {
+    const output = data.toString().trim();
+    if (output) {
+      logger.info(`${type}: ${output}`);
+      res.write(`data: ${output}\n\n`);
+    }
+  };
 
-  // Stream stderr
-  processWithoutNullStreams.stderr.on('data', (data) => {
-    const error = data.toString();
-    logger.error(`response: ${error}`);
-    res.write(`data: ${error}\n\n`);
-    // res.end();
-  });
+  // Stream stdout and stderr
+  prs.stdout.on('data', (data) => handleOutput(data, 'STDOUT'));
+  prs.stderr.on('data', (data) => handleOutput(data, 'STDERR'));
 
   // Handle process completion
-  processWithoutNullStreams.on('close', (code) => {
+  prs.on('close', (code) => {
     logger.info(`Command completed with code ${code}`);
-    res.write(`data: ${code}\n\n`);
-    // res.end();
+    res.write(`data: Command completed with code ${code}\n\n`);
+    res.end();
   });
 
   // Handle process errors
-  processWithoutNullStreams.on('error', (error) => {
-    logger.error(`Response: ${error.message}`);
-    res.write(`data: Response: ${error.message}\n\n`);
-    // res.end();
+  prs.on('error', (error) => {
+    logger.error(`Error: ${error.message}`);
+    res.write(`data: Error: ${error.message}\n\n`);
+    res.end();
   });
 };
 

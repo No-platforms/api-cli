@@ -53,6 +53,11 @@ A secure web service that executes CLI commands based on authenticated HTTP requ
 
 2. Configure your environment variables in `.env`:
    - Set your secure API_KEY
+      
+      You can generate safe token by run:
+      ```
+     date | sha512sum
+     ```
    - Configure your CLI_COMMAND
    - Set your CLI_WORKING_DIR
 

@@ -25,7 +25,6 @@ A secure web service that executes CLI commands based on authenticated HTTP requ
    ```
 
 2. Configure your environment variables in `.env`
-
 3. Build and start the containers:
    ```bash
    docker-compose up -d
@@ -37,7 +36,19 @@ A secure web service that executes CLI commands based on authenticated HTTP requ
 
 1. Install dependencies:
    ```bash
+   sudo apt update
+   
+   curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
+
+   sudo apt install -y nodejs
+   
+   node -v
+
    npm install
+   
+   npm -v
+   
+   npm i
    ```
 
 2. Configure your environment variables in `.env`:

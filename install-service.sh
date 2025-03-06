@@ -10,10 +10,10 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Configuration
-PROJECT_DIR="/opt/cicd-cli-controller"
+PROJECT_DIR=$(PWD)
 SERVICE_NAME="cicd-cli-controller"
 SERVICE_USER="cicd-service"
-NODE_VERSION="20.x"
+NODE_VERSION="19.x"
 
 echo "Installing CICD CLI Controller Service..."
 
@@ -29,13 +29,10 @@ if ! id "$SERVICE_USER" &>/dev/null; then
     useradd -r -s /bin/false $SERVICE_USER
 fi
 
-# Create project directory and set permissions
-mkdir -p $PROJECT_DIR
-cp -r ./* $PROJECT_DIR/
+
 chown -R $SERVICE_USER:$SERVICE_USER $PROJECT_DIR
 
 # Install dependencies
-cd $PROJECT_DIR
 npm install --production
 
 # Create systemd service file

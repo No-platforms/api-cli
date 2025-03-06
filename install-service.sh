@@ -10,7 +10,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Configuration
-PROJECT_DIR=$(PWD)
+PROJECT_DIR=${pwd}
 SERVICE_NAME="cicd-cli-controller"
 SERVICE_USER="cicd-service"
 NODE_VERSION="19.x"

@@ -24,10 +24,33 @@ if ! command -v node &> /dev/null; then
     apt-get install -y nodejs
 fi
 
+
+
+
+
+# Create the new user
+echo "Creating user $SERVICE_USER..."
+
 # Create service user if not exists
 if ! id "$SERVICE_USER" &>/dev/null; then
     useradd -r -s /bin/false $SERVICE_USER
 fi
+
+
+# Add the user to the sudo group
+echo "Adding $SERVICE_USER to the sudo group..."
+usermod -aG sudo "$SERVICE_USER"
+
+# Verify the user belongs to the sudo group
+echo "Verifying sudo access for $SERVICE_USER..."
+groups "$SERVICE_USER" | grep -q "sudo" && echo "$SERVICE_USER has been added to the sudo group." || echo "Failed to add $SERVICE_USER to the sudo group."
+
+# Test sudo access (optional)
+echo "Testing sudo access for $SERVICE_USER..."
+su - "$SERVICE_USER" -c "sudo whoami"
+
+echo "User $SERVICE_USER has been created and granted sudo privileges."
+
 
 
 chown -R $SERVICE_USER:$SERVICE_USER $PROJECT_DIR

@@ -28,30 +28,6 @@ fi
 
 
 
-# Create the new user
-echo "Creating user $SERVICE_USER..."
-
-# Create service user if not exists
-if ! id "$SERVICE_USER" &>/dev/null; then
-    useradd -r -s /bin/false $SERVICE_USER
-fi
-
-
-# Add the user to the sudo group
-echo "Adding $SERVICE_USER to the sudo group..."
-usermod -aG sudo "$SERVICE_USER"
-
-# Verify the user belongs to the sudo group
-echo "Verifying sudo access for $SERVICE_USER..."
-groups "$SERVICE_USER" | grep -q "sudo" && echo "$SERVICE_USER has been added to the sudo group." || echo "Failed to add $SERVICE_USER to the sudo group."
-
-
-chown -R $SERVICE_USER:$SERVICE_USER $PROJECT_DIR
-
-
-echo "User $SERVICE_USER has been created and granted sudo privileges."
-
-
 
 
 
@@ -66,7 +42,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=${SERVICE_USER}
 WorkingDirectory=${PROJECT_DIR}
 ExecStart=/usr/bin/node src/server.js
 Restart=always

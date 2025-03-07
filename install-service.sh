@@ -46,8 +46,8 @@ WorkingDirectory=${PROJECT_DIR}
 ExecStart=/usr/bin/node src/server.js
 Restart=always
 RestartSec=10
-StandardOutput=syslog
-StandardError=syslog
+StandardOutput=journal
+StandardError=journal
 SyslogIdentifier=${SERVICE_NAME}
 Environment=NODE_ENV=production
 EnvironmentFile=${PROJECT_DIR}/.env

@@ -52,7 +52,7 @@ StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=${SERVICE_NAME}
 Environment=NODE_ENV=production
-
+EnvironmentFile=${PROJECT_DIR}/.env
 [Install]
 WantedBy=multi-user.target
 EOL

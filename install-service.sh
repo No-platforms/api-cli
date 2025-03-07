@@ -45,15 +45,15 @@ usermod -aG sudo "$SERVICE_USER"
 echo "Verifying sudo access for $SERVICE_USER..."
 groups "$SERVICE_USER" | grep -q "sudo" && echo "$SERVICE_USER has been added to the sudo group." || echo "Failed to add $SERVICE_USER to the sudo group."
 
-# Test sudo access (optional)
-echo "Testing sudo access for $SERVICE_USER..."
-su - "$SERVICE_USER" -c "sudo whoami"
+
+chown -R $SERVICE_USER:$SERVICE_USER $PROJECT_DIR
+
 
 echo "User $SERVICE_USER has been created and granted sudo privileges."
 
 
 
-chown -R $SERVICE_USER:$SERVICE_USER $PROJECT_DIR
+
 
 # Install dependencies
 npm install --production

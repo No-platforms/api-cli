@@ -3,154 +3,131 @@
 A secure web service that executes CLI commands based on authenticated HTTP requests.
 
 ## Features
+# CI/CD CLI Controller
 
-- Secure API endpoint with API key authentication
-- Rate limiting to prevent abuse
-- Nginx reverse proxy configuration
-- Environment-based command execution
-- Logging system
-- Health check endpoint
-- Systemd service integration for automatic startup
-- Docker support for containerized deployment
-- GitHub Actions for automated Docker builds
+Purpose
 
-## Setup
+This repository implements a small, secure HTTP-driven command executor intended to run pre-configured, non-interactive shell commands in response to authenticated API requests. It is designed as a safe bridge between event sources (webhooks, internal dashboards, or CI systems) and deterministic maintenance or deployment scripts. Security is a first-class concern: the service is meant to be used with vetted commands, API-key authentication, logging, rate limiting, and optional network isolation (reverse proxy, containerization). Operators should only expose this API to trusted networks, use TLS, restrict allowed commands, and run the service with least privilege.
 
-### Option 1: Docker (Recommended)
+Safe Use Cases
 
-1. Install Docker and Docker Compose on your Ubuntu system:
-   ```bash
-   sudo apt-get update
-   sudo apt-get install docker.io docker-compose
-   ```
+- Triggering a vetted deployment script on an internal network (pull, build, and restart) during controlled release windows.
+- Running non-destructive maintenance tasks such as clearing caches, rotating logs, or syncing files to an internal backup target.
+- Kicking off database migration scripts in a scheduled maintenance window after thorough validation.
+- Starting/stopping internal services or jobs in an environment protected by access controls and auditing.
+- Collecting diagnostics (log bundles, system information) for support or monitoring without exposing sensitive data.
+- Launching test runs or build jobs that generate artifacts for internal CI pipelines.
 
-2. Configure your environment variables in `.env`
-3. Build and start the containers:
-   ```bash
-   docker-compose up -d
-   ```
+Security notes: always whitelist commands (do not accept arbitrary shell input), keep `API_KEY` secret and rotated, serve behind TLS and a firewall or VPN, run the service as an unprivileged user or inside a container, and log and monitor all requests.
 
-   The service will be available on port 80 (Nginx) and 3000 (direct access).
+Highlights
+- Secure API endpoint with API-key authentication
+- Rate limiting and CORS protection
+- Optional Nginx reverse proxy
+- Dockerized for easy deployment
+- Systemd installation script for traditional hosts
+- Health check and request logging
 
-### Option 2: Traditional Installation
+Quick Links
+- Usage: POST /api/trigger
+- Health: GET /health
+- Code: index.js, src/server.js
 
-1. Install dependencies:
-   ```bash
-   sudo apt update
-   
-   curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
+Requirements
+- Docker (recommended) or Node.js >= 16 and npm
+- Linux host (Ubuntu is supported by provided scripts)
 
-   sudo apt install -y nodejs
-   
-   node -v
+Quick Start (Docker - recommended)
 
-   npm install
-   
-   npm -v
-   
-   npm i
-   ```
-
-2. Configure your environment variables in `.env`:
-   - Set your secure API_KEY
-      
-      You can generate safe token by run:
-      ```
-     date | sha512sum
-     ```
-   - Configure your CLI_COMMAND
-   - Set your CLI_WORKING_DIR
-
-3. Configure Nginx:
-   - Copy the nginx.conf to your Nginx configuration directory
-   - Restart Nginx
-
-4. Install as a service (Ubuntu):
-   ```bash
-   sudo chmod +x install-service.sh
-   sudo ./install-service.sh
-   ```
-
-   This will:
-   - Install Node.js if not present
-   - Create a dedicated service user
-   - Set up the project in /opt/cicd-cli-controller
-   - Create and enable a systemd service
-   - Start the service automatically
-
-5. Manual start (if not using service):
-   ```bash
-   npm start
-   ```
-
-## Usage
-
-To trigger the CLI command, send a POST request to `/api/trigger` with your API key:
+1. Create a `.env` in the project root with required variables (see Env section).
+2. Build and run:
 
 ```bash
-curl -X POST http://localhost/api/trigger \
-  -H "X-API-Key: your-api-key-here"
-```
-
-## Security Features
-
-- Helmet.js for security headers
-- API key authentication
-- Rate limiting
-- CORS protection
-- Nginx reverse proxy
-- Request logging
-- Dedicated service user
-- Systemd service isolation
-- Docker container isolation
-
-## Health Check
-
-Access the health check endpoint:
-
-```bash
-curl http://localhost/health
-```
-
-## Service Management
-
-### Docker
-```bash
-# Start services
-docker-compose up -d
-
-# Stop services
-docker-compose down
-
-# View logs
-docker-compose logs -f
-
-# Rebuild and restart
 docker-compose up -d --build
 ```
 
-### Traditional Installation
-Once installed as a service, you can manage it using systemctl:
+3. View logs:
 
 ```bash
-sudo systemctl start cicd-cli-controller    # Start the service
-sudo systemctl stop cicd-cli-controller     # Stop the service
-sudo systemctl restart cicd-cli-controller  # Restart the service
-sudo systemctl status cicd-cli-controller   # Check service status
+docker-compose logs -f
 ```
 
-## GitHub Actions
+Start Without Docker (traditional install)
 
-The project includes GitHub Actions workflow that automatically:
-- Builds the Docker image
-- Pushes to Docker Hub on successful builds
-- Tags images based on git tags and commits
-- Uses caching to speed up builds
+1. Install Node.js and dependencies:
 
-To set up GitHub Actions:
+```bash
+sudo apt update
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+npm install
+```
 
-1. Add these secrets to your GitHub repository:
-   - `DOCKERHUB_USERNAME`: Your Docker Hub username
-   - `DOCKERHUB_TOKEN`: Your Docker Hub access token (not password)
+2. Configure `.env` and start:
 
-2. Push to the main branch or create a tag to trigger the workflow
+```bash
+npm start
+```
+
+3. To install as a systemd service (Ubuntu):
+
+```bash
+sudo chmod +x install-service.sh
+sudo ./install-service.sh
+```
+
+Environment (important)
+Create a `.env` file with at least the following values:
+
+```
+API_KEY=your-secure-api-key
+CLI_COMMAND=./your-script.sh
+CLI_WORKING_DIR=/path/to/working/dir
+PORT=3000
+```
+
+Generating a secure key locally:
+
+```bash
+date | sha512sum | cut -c1-64
+```
+
+API
+- POST /api/trigger — triggers the configured CLI command.
+  - Header: `X-API-Key: <API_KEY>`
+  - Response: JSON with status and optional command output or error.
+
+- GET /health — returns 200 OK when the service is healthy.
+
+Example trigger
+
+```bash
+curl -X POST http://localhost/api/trigger -H "X-API-Key: your-api-key"
+```
+
+Logging
+- Logs are written to the `logs/` directory by default (see project files).
+
+Deployment Notes
+- The included `nginx.conf` is a ready-to-use reverse proxy config — adapt upstream/SSL as needed.
+- `docker-compose.yml` starts the app and nginx for production-like testing.
+- The `install-service.sh` script sets up a systemd service and places the app under `/opt/cicd-cli-controller` by default.
+
+Security Best Practices
+- Keep `API_KEY` secret and rotate it periodically.
+- Serve the API behind TLS (terminate TLS at Nginx or an external proxy).
+- Run the service with a dedicated, unprivileged user when using systemd.
+- Restrict access to the host and control network rules if exposing the API.
+
+CI/CD
+- A GitHub Actions workflow is included to build and push Docker images. Add Docker Hub credentials as repository secrets (`DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`) to enable publishing.
+
+Troubleshooting
+- If the service doesn't start, check `docker-compose logs` or `journalctl -u cicd-cli-controller` for systemd installs.
+- Ensure `CLI_COMMAND` is executable and `CLI_WORKING_DIR` exists.
+
+Contributing
+- Open issues or pull requests. Keep changes small and include tests where appropriate.
+
+License
+- MIT (or choose your preferred license)

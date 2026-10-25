@@ -80,10 +80,11 @@ Environment (important)
 Create a `.env` file with at least the following values:
 
 ```
-API_KEY=your-secure-api-key
-CLI_COMMAND=./your-script.sh
+API_KEY=<at least 32 characters>
+CLI_COMMAND=/absolute/path/to/your-script.sh
 CLI_WORKING_DIR=/path/to/working/dir
 PORT=3000
+HOST=127.0.0.1
 ```
 
 Generating a secure key locally:
@@ -93,17 +94,28 @@ date | sha512sum | cut -c1-64
 ```
 
 API
-- POST /api/trigger — triggers the configured CLI command.
-  - Header: `X-API-Key: <API_KEY>`
-  - Response: JSON with status and optional command output or error.
-
+- POST /api/trigger — runs `CLI_COMMAND` once with the given argument.
+  - Header: `X-API-Key: <API_KEY>` (at least 32 characters)
+  - Body (JSON): `{ "arg": "Dev-1.2.3" }`. `arg` must match `CLI_ARG_PATTERN`.
+  - Response: `text/event-stream` with the program's output, then `Command completed with code N`.
+  - Returns `409` if another run is already in progress, `401` for a bad key, `400` for a bad body.
 - GET /health — returns 200 OK when the service is healthy.
 
 Example trigger
 
 ```bash
-curl -X POST http://localhost/api/trigger -H "X-API-Key: your-api-key"
+curl -N -X POST https://your-host/api/trigger \
+  -H "X-API-Key: $API_KEY" -H "Content-Type: application/json" \
+  -d '{"arg":"Dev-1.2.3"}'
 ```
+
+Security model
+- The program is started with `spawn` and an argument array, with no shell. Shell characters in `arg` are never interpreted.
+- `CLI_COMMAND` must be an absolute path to a program, without spaces or arguments. The service refuses to start otherwise.
+- The API key is compared in constant time against a SHA-256 digest of itself.
+- The service listens on `127.0.0.1` by default. Put TLS and access control in front of it (nginx in this repo, or a firewall or VPN).
+- Only one run at a time. Each run is stopped after `CLI_TIMEOUT_MS`.
+- A client disconnect does not stop a running command, so a deploy is never cut off halfway.
 
 Logging
 - Logs are written to the `logs/` directory by default (see project files).

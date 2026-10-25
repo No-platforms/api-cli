@@ -112,3 +112,8 @@ test('config refuses a relative command path', () => {
 test('config refuses a missing command', () => {
   assert.throws(() => loadConfig(envFor('echo.sh', { CLI_COMMAND: join(here, 'nope.sh') })), /does not exist/);
 });
+
+test('config accepts a TRUST_PROXY subnet and defaults to no trust', () => {
+  assert.equal(loadConfig(envFor('echo.sh', { TRUST_PROXY: '172.18.0.0/16' })).trustProxy, '172.18.0.0/16');
+  assert.equal(loadConfig(envFor('echo.sh')).trustProxy, false);
+});

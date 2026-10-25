@@ -53,5 +53,7 @@ export function loadConfig(env) {
     host: env.HOST || '127.0.0.1',
     port: Number(env.PORT || 3000),
     rateLimitMax: Number(env.RATE_LIMIT_MAX || 100),
+    // Proxies allowed to set X-Forwarded-For, e.g. 172.18.0.0/16 for the nginx container.
+    trustProxy: env.TRUST_PROXY || false,
   };
 }

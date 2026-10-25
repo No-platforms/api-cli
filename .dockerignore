@@ -1,0 +1,13 @@
+# Never bake secrets, logs, or local tooling into the image.
+.env
+.env.*
+!.env.example
+.git
+.github
+.idea
+.bolt
+.DS_Store
+logs
+node_modules
+tests
+*.log

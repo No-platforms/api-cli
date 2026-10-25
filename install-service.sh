@@ -55,7 +55,10 @@ chmod 640 "$PROJECT_DIR/.env"
 mkdir -p "$PROJECT_DIR/logs"
 chown -R "$SERVICE_USER":"$SERVICE_USER" "$PROJECT_DIR/logs"
 
-(cd "$PROJECT_DIR" && npm ci --omit=dev --no-audit --no-fund)
+# SKIP_NPM_CI=1 reuses an existing node_modules (e.g. one copied from a verified build).
+if [ -z "${SKIP_NPM_CI:-}" ]; then
+  (cd "$PROJECT_DIR" && npm ci --omit=dev --no-audit --no-fund)
+fi
 
 cat > "/etc/systemd/system/${SERVICE_NAME}.service" <<UNIT
 [Unit]
